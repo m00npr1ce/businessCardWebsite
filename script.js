@@ -19,11 +19,11 @@ if (firstP) {
     firstP.textContent = "Это новый текст параграфа.";
 }
 
-// 4. Скрытие встроенного видео (нужно указать, на какой странице)
-const iframe = document.querySelector('main iframe');
-if (iframe) {
-    iframe.style.display = "none";
-}
+// // 4. Скрытие встроенного видео (нужно указать, на какой странице)
+// const iframe = document.querySelector('main iframe');
+// if (iframe) {
+//     iframe.style.display = "none";
+// }
 
 // Часть 2: Работа с формой
 const formData = {};
