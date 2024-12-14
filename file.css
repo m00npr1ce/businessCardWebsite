@@ -1,0 +1,388 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+h1{font-size:2em;margin:0.67em 0}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
+legend{border:0;padding:0}
+textarea{overflow:auto}
+optgroup{font-weight:bold}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+#successMessage {
+    display: none; /* Скрыть по умолчанию */
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+#successMessage.show {
+    display: block;
+    opacity: 1;
+    color: #28a745; /* Зеленый цвет для успешной отправки */
+}
+
+* {
+  font-size: 25px;
+}
+a:visited, a{
+    color: rgba(0, 0, 0, 0.84);
+}
+a:hover {
+    color: #d000ff;
+    font-size: 40px
+}
+a:active {
+    color: #ffffff;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(119, 186, 181, 0.54);
+    color: rgba(0, 0, 0, 0.84);
+}
+header {
+    border: black solid 2px
+}
+header div{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div img {
+    width: 120px;
+}
+header nav {
+    border-top: black solid 2px;
+}
+/*header nav ul {*/
+/*    height: 15px;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    justify-content: space-around;*/
+/*    flex-direction: row;*/
+
+
+/*}*/
+/*header nav ul li {*/
+/*    margin: 0 10px;*/
+/*}*/
+/*header nav ul li a {*/
+/*    text-decoration: none;*/
+/*    font-size: 25px;*/
+/*}*/
+main {
+    border: black solid 2px;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    display: flex;
+    margin: -3px 0;
+    border-radius: 0px;
+}
+aside {
+    display: block;
+}
+@media (max-width: 1000px) {
+    aside
+    {
+        display: none;
+    }
+    /*header nav ul {*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*header nav ul li a {*/
+    /*    font-size: 34px*/
+    /*}*/
+    * {
+        font-size: 40px;
+    }
+    input {
+        transform: scale(1.9);
+
+    }
+    .block2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+/*main aside nav ul{*/
+/*    position: relative;*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*main aside nav ul li a {*/
+/*    text-decoration: none;*/
+/*}*/
+main section {
+    border: black solid 2px;
+    border-right-color: transparent;
+    width: 100%;
+    border-radius: 0px;
+}
+main section img {
+    float: right;
+
+}
+footer {
+    border: black solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div a img{
+    width: 40px;
+    background: transparent;
+}
+label {
+    width: 150px;
+    margin-right: 10px;
+    text-align: left;
+}
+.block {
+    padding: 16px;
+}
+.block1 {
+    padding: 16px;
+    width: 100%;
+    border: black solid 2px;
+    border-right-color: transparent;
+}
+.block2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/*.card {*/
+/*    padding: 10px;*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    box-shadow: 0 4px 8px 0 black;*/
+/*}*/
+
+/*.card img {*/
+/*    width: 80%;*/
+/*    height: auto;*/
+/*}*/
+
+/*.card p {*/
+/*    text-align: center;*/
+/*}*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    display: flex;
+    /*align-items: center;*/
+    margin-bottom: 15px;
+}
+
+
+
+.input, .comment {
+    width: 300px;
+
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+textarea.comment {
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #d000ff;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.form-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#close {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    float: right;
+}
+.thanks {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.thanksContent{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+tr:hover {
+    background-color: #45a049;
+}
+.gridElements {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+@media (max-width: 1000px) {
+    .block2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+.table th, .table td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid black !important;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерное распределение пространства между элементами */
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    background-color: rgba(119, 186, 181, 0.54); /* Цвет карточки */
+    height: 100%; /* Устанавливаем высоту карточки на 100% */
+}
+
+.card img {
+    width: 100%; /* Установим на 100% для адаптивности */
+    height: auto;
+}
+
+.card p {
+    text-align: center;
+    margin: 10px 0 0; /* Убираем лишние отступы сверху */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Цвет кнопки */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Устанавливаем ширину кнопки на 100% */
+}
+
+button:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}
+
+/* Настраиваем адаптивность */
+@media (max-width: 1200px) {
+    .card {
+        margin-bottom: 20px; /* Отступ между карточками */
+    }
+}
+
+@media (max-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 50%; /* 2 карточки в ряд */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-4 {
+        flex: 0 0 100%; /* 1 карточка в ряд */
+        max-width: 100%;
+    }
+}
+#product-slider {
+    width: 800px; /* Ограничиваем ширину слайдера до 80% от ширины контейнера */
+    margin: 0 auto; /* Центрируем слайдер */
+}
+
+/* Для того, чтобы картинки внутри слайдера корректно вписывались */
+#product-slider .item img {
+    width: 800px; /* Картинка занимает всю ширину элемента слайдера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт-визитка</title>
+    <link rel="stylesheet" href="file.css">
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20240613/original/pngtree-lion-head-face-logo-silhouette-black-icon-tattoo-mascot-hand-drawn-png-image_15317165.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="block">
+        <img src="https://png.pngtree.com/png-clipart/20240613/original/pngtree-lion-head-face-logo-silhouette-black-icon-tattoo-mascot-hand-drawn-png-image_15317165.png" alt="Logo">
+
+        <p>Группа ЭФБО-03-23<br>
+            Асанов Максим Сергеевич</p>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="page3.html">Первый семестр<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Второй семестр<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="page2.html">Услуги<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Авторизация<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <aside class="block">
+        <h4>
+            Навигация по странице
+        </h4>
+        <nav>
+            <ul>
+                <li><a href="#front">Фронтенд</a></li>
+                <li><a href="#back">Бэкенд</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="block">
+        <!-- Добавляем id для изображения -->
+        <img id="student-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRq6v4lwVKgakVLO1xZ2DFbNK1wyHuz3ZwA&s" alt="Аватар">
+
+        <h1 id="header">
+            Добро пожаловать на сайт
+        </h1>
+        <p>
+            Меня зовут Асанов Максим Сергеевич и я начинающий специалист по веб-разработке.
+        </p>
+        <h3 id="front">Фронтенд</h3>
+        <p id="text-paragraph">
+            Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда обеспечить удобство использования и эстетическую привлекательность.
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="720" height="405" src="https://rutube.ru/play/embed/c6cc4d620b1d4338901770a44b3e82f4/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+        <h3 id="back">Бэкенд</h3>
+        <p>
+            Бэкенд (или серверная часть) это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или РНР, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда обеспечить стабильную работу приложения и безопасность данных.
+        </p>
+        <iframe width="720" height="405" src="https://rutube.ru/play/embed/c6cc4d620b1d4338901770a44b3e82f4/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </section>
+</main>
+<footer class="block">
+    <div class="copy"><p>&copy; Асанов Максим Сергеевич, 2024</p></div>
+    <div>
+        <a href="https://wa.me/+79672396458"><img src="https://static.vecteezy.com/system/resources/previews/018/930/746/large_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="WhatsApp"></a>
+        <a href="https://vk.com/better_than__y0u"><img src="https://png.pngtree.com/element_our/png_detail/20181020/vk-icon-design-vector-png_139732.jpg" alt="VK"></a>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+
+    // Обработчик для увеличения изображения при наведении
+    const studentPhoto = document.getElementById('student-photo');
+    studentPhoto.addEventListener('mouseover', function() {
+        studentPhoto.style.transform = 'scale(1.1)';
+        studentPhoto.style.transition = 'transform 0.3s ease';
+        studentPhoto.style.maxWidth = '400px'; // Максимальная ширина изображения
+        studentPhoto.style.maxHeight = '400px'; // Максимальная высота изображения
+    });
+
+    studentPhoto.addEventListener('mouseout', function() {
+        studentPhoto.style.transform = 'scale(1)';
+        studentPhoto.style.maxWidth = '400px'; // Убираем ограничение на ширину
+        studentPhoto.style.maxHeight = '400px'; // Убираем ограничение на высоту
+    });
+
+    // Обработчик для замены фотографии при клике
+    studentPhoto.addEventListener('click', function() {
+        studentPhoto.src = 'https://img.freepik.com/premium-photo/vertical-photo-middleaged-male-teacher-with-beard-corrects-exams-classroom_325573-775.jpg'; // Укажите URL фотографии преподавателя
+    });
+    // Обработчик для события двойного клика (dblclick)
+    studentPhoto.addEventListener('dblclick', function() {
+        alert('Не налегай, у меня не так много любимых преподавателей');
+    });
+    // Обработчик для вращения изображения при наведении
+    studentPhoto.addEventListener('mouseover', function() {
+        studentPhoto.style.transform = 'rotate(360deg) scale(1.1)'; // Вращение + увеличение
+        studentPhoto.style.transition = 'transform 0.6s ease'; // Плавный переход
+        studentPhoto.style.maxWidth = '400px'; // Максимальная ширина изображения
+        studentPhoto.style.maxHeight = '400px'; // Максимальная высота изображения
+    });
+
+    studentPhoto.addEventListener('mouseout', function() {
+        studentPhoto.style.transform = 'rotate(0deg) scale(1)'; // Возвращаем к исходному состоянию
+        studentPhoto.style.maxWidth = '400px'; // Убираем ограничение на ширину
+        studentPhoto.style.maxHeight = '400px'; // Убираем ограничение на высоту
+    });
+    // Анимация увеличения и уменьшения заголовка
+    const header = document.getElementById('header');
+    let scale = 1; // Начальный масштаб
+    let targetScale = 1; // Целевой масштаб (начальный размер)
+    let animationFrameId;
+
+    function animateScale() {
+        // Инкрементируем или декрементируем масштаб
+        const scaleDifference = targetScale - scale;
+        if (Math.abs(scaleDifference) > 0.01) {
+            scale += scaleDifference * 0.1; // Постепенно приближаем к целевому масштабу
+            header.style.transform = `scale(${scale})`;
+            animationFrameId = requestAnimationFrame(animateScale);
+        } else {
+            scale = targetScale; // Устанавливаем точный целевой масштаб
+            header.style.transform = `scale(${scale})`;
+        }
+    }
+
+    header.addEventListener('mouseover', function() {
+        // Запускаем анимацию увеличения
+        cancelAnimationFrame(animationFrameId); // Останавливаем текущую анимацию
+        targetScale = 1.2;  // Устанавливаем целевой размер
+        animateScale();
+    });
+
+    header.addEventListener('mouseout', function() {
+        // Запускаем анимацию уменьшения
+        cancelAnimationFrame(animationFrameId); // Останавливаем текущую анимацию
+        targetScale = 1;  // Возвращаем к исходному размеру
+        animateScale();
+    });
+    // Функция для плавного изменения фона параграфа
+    const paragraph = document.getElementById('text-paragraph');
+    let targetColor = [255, 255, 255]; // Исходный цвет (белый)
+    let currentColor = [255, 255, 255]; // Начальный цвет
+
+    function interpolateColor(start, end, factor) {
+        return start.map((value, index) => {
+            return Math.round(value + (end[index] - value) * factor);
+        });
+    }
+
+    function animateColorChange() {
+        const step = 0.05; // Шаг изменения
+        const colorDifference = Math.max(
+            Math.abs(targetColor[0] - currentColor[0]),
+            Math.abs(targetColor[1] - currentColor[1]),
+            Math.abs(targetColor[2] - currentColor[2])
+        );
+
+        if (colorDifference > 5) {
+            currentColor = interpolateColor(currentColor, targetColor, step);
+            paragraph.style.backgroundColor = `rgb(${currentColor[0]}, ${currentColor[1]}, ${currentColor[2]})`;
+            requestAnimationFrame(animateColorChange);
+        } else {
+            currentColor = targetColor.slice(); // Обновляем цвет
+            paragraph.style.backgroundColor = `rgb(${currentColor[0]}, ${currentColor[1]}, ${currentColor[2]})`;
+        }
+    }
+
+    paragraph.addEventListener('click', function() {
+        // При клике меняем цвет фона
+        // Случайный цвет для анимации
+        targetColor = [
+            Math.floor(Math.random() * 256),
+            Math.floor(Math.random() * 256),
+            Math.floor(Math.random() * 256)
+        ];
+        animateColorChange();
+    });
+</script>
+
+</body>
+</html>

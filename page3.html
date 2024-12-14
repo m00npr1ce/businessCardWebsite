@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт-визитка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="file.css">
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20240613/original/pngtree-lion-head-face-logo-silhouette-black-icon-tattoo-mascot-hand-drawn-png-image_15317165.png">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="block">
+        <img src="https://png.pngtree.com/png-clipart/20240613/original/pngtree-lion-head-face-logo-silhouette-black-icon-tattoo-mascot-hand-drawn-png-image_15317165.png" alt="Logo">
+
+            <p>Группа ЭФБО-03-23<br>
+            Асанов Максим Сергеевич</p>
+        </div>
+    </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page3.html">Первый семестр<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Второй семестр<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page2.html">Услуги<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Авторизация<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <aside class="block">
+            <h4>
+                Навигация по странице
+            </h4>
+            <nav>
+                <ul>
+                    <li><a href="#lectures">Лекции</a></li>
+                    <li><a href="#practices">Практики</a>
+                    <li><a href="#address">Адрес вуза</a></li>
+                    <li><a href="#workProgram">Рабочая программа</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="block">
+            <h1>
+                Первый семестр
+            </h1>
+            <button id="changeSemester" class="btn btn-primary mb-3">Посмотреть практики второго семестра</button>
+
+            <div class="accordion" id="accordionPractices">
+                <div class="card">
+                    <div class="card-header" id="headingPractices">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePractices" aria-expanded="true" aria-controls="collapsePractices">
+                                Практики
+                            </button>
+                        </h3>
+                    </div>
+
+                    <div id="collapsePractices" class="collapse show" aria-labelledby="headingPractices" data-parent="#accordionPractices">
+                        <div class="card-body">
+                            <table class="table table-bordered table-hover" id="practicesTable">
+                                <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th>Тема</th>
+                                    <th>Посещение</th>
+                                    <th>Выполнение</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>1</td><td>Основы языка HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>2</td><td>Формы и кнопки в HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>3</td><td>Таблицы и интерактивные элементы HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>4</td><td>Основы работы с CSS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>5</td><td>Работа с классами в CSS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>6</td><td>Работа с сетками и разметкой в HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>7</td><td>Адаптивная верстка</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>8</td><td>Bootstrap</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>9</td><td>Основы языка JavaScript</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>10</td><td>Базовые задачи на JS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>11</td><td>DOM-структура приложений и работа с объектами в языке JS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>12</td><td>Встраивание скриптов</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>13</td><td>Отладка сценариев</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>14</td><td>Анимации и работа с ними</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>15</td><td>GitHub</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>16</td><td>Защита проекта</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка для лекций -->
+                <div class="card">
+                    <div class="card-header" id="headingLectures">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseLectures" aria-expanded="false" aria-controls="collapseLectures">
+                                Лекции
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseLectures" class="collapse" aria-labelledby="headingLectures" data-parent="#accordionPractices">
+                        <div class="card-body">
+                            <table class="table table-bordered table-hover" id="lecturesTable">
+                                <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th>Тема</th>
+                                    <th>Посещение</th>
+                                    <th>Выполнение</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>1</td><td>Введение в веб-разработку</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>2</td><td>Основы программирования</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>3</td><td>Модели и технологии веб-приложений</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>4</td><td>Сетевые технологии</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>5</td><td>Базы данных</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>6</td><td>Основы безопасности информации</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>7</td><td>Технологии работы с данными</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>8</td><td>Основы алгоритмизации</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                <tr><td>9</td><td>Основы проектирования программного обеспечения</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="address">
+                Занятия проходят по адресу Москва, Проспект Вернадского, 78
+            </h3>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9134ec658cfb5f85a22321f47ae8905f81e577dfdfd767e9e1e921b6e02d673d&amp;source=constructor" width="553" height="505" frameborder="0"></iframe><br>
+            <h3 id="workProgram">Рабочая программа</h3>
+            <div class="embed-responsive embed-responsive-4by3 mt-3">
+                <object class="embed-responsive-item" height="700" width="900" data="ПР_3_HTML_Таблицы%20и%20мультимедиа.pdf"></object>
+            </div>
+            <h3>
+                Красивые картинки
+            </h3>
+            <div class="owl-carousel owl-theme" id="product-slider">
+                <div class="item">
+                    <img src="https://img.freepik.com/free-photo/rainbow-end-road-landscape_23-2151596720.jpg" alt="Слайдер 1">
+                </div>
+                <div class="item">
+                    <img src="https://img.freepik.com/free-photo/rainbow-end-road-landscape_23-2151596720.jpg" alt="Слайдер 2">
+                </div>
+                <div class="item">
+                    <img src="https://img.freepik.com/free-photo/rainbow-end-road-landscape_23-2151596720.jpg" alt="Слайдер 3">
+                </div>
+                <!-- Добавьте еще слайдов, если нужно -->
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <footer class="block">
+        <div class="copy"><p>&copy; Асанов Максим Сергеевич, 2024</p></div>
+        <div>
+            <a href="https://wa.me/+79672396458"><img src="https://static.vecteezy.com/system/resources/previews/018/930/746/large_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="WhatsApp"></a>
+            <a href="https://vk.com/better_than__y0u"><img src="https://png.pngtree.com/element_our/png_detail/20181020/vk-icon-design-vector-png_139732.jpg" alt="VK"></a>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Обработчик клика по заголовку H1
+            $("h1").click(function(){
+                alert("Вы кликнули на заголовок - так держать!");
+            });
+            // Обработчик клика по кнопке "Посмотреть практики второго семестра"
+            $("#changeSemester").click(function(){
+                var practices = [
+                    "Базовое бэкенд-приложение",
+                    "HTTP-запросы",
+                    "JSON и работа с ним",
+                    "HTTP-ответы",
+                    "Проектирование API",
+                    "Роутинг и его настройка",
+                    "NoSQL базы данных",
+                    "Обеспечение авторизации и доступа пользователей",
+                    "Работа сторонних сервисов уведомления и авторизации",
+                    "Основы ReactJS",
+                    "Работа с компонентами динамической DOM",
+                    "Использование хуков в React",
+                    "Основы микросервисной архитектуры",
+                    "Разработка классических модулей веб-приложений",
+                    "Разработка классических модулей веб-приложений"
+                ];
+
+                // Меняем содержимое таблицы
+                var rows = '';
+                for (var i = 0; i < practices.length; i++) {
+                    rows += `<tr><td>${i+1}</td><td>${practices[i]}</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>`;
+                }
+
+                // Обновляем таблицу
+                $("#practicesTable tbody").html(rows);
+            });
+
+            $("#product-slider").owlCarousel({
+                items: 1,            // Количество элементов, показываемых одновременно
+                loop: true,          // Зацикливание
+                autoplay: true,      // Автоматическое воспроизведение
+                autoplayTimeout: 3000, // Задержка автопроигрывания в миллисекундах
+                nav: true,           // Стрелки навигации
+                dots: true           // Точки внизу слайдера
+            });
+        });
+    </script>
+</body>
+</html>
